@@ -1,4 +1,4 @@
-package requests.entities;
+package com.payu.sdk.requests.entities;
 
 public class Product {
 

@@ -1,7 +1,7 @@
-package requests;
+package com.payu.sdk.requests;
 
-import requests.entities.Buyer;
-import requests.entities.Product;
+import com.payu.sdk.requests.entities.Buyer;
+import com.payu.sdk.requests.entities.Product;
 
 import java.util.List;
 
