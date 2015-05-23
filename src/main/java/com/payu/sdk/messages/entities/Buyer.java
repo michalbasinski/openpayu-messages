@@ -1,4 +1,4 @@
-package com.payu.sdk.requests.entities;
+package com.payu.sdk.messages.entities;
 
 public class Buyer {
 

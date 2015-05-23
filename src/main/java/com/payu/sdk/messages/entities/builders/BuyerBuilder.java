@@ -1,6 +1,6 @@
-package com.payu.sdk.requests.entities.builders;
+package com.payu.sdk.messages.entities.builders;
 
-import com.payu.sdk.requests.entities.Buyer;
+import com.payu.sdk.messages.entities.Buyer;
 
 public class BuyerBuilder {
     private Buyer buyer = new Buyer();

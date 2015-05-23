@@ -1,6 +1,6 @@
-package com.payu.sdk.requests.entities.builders;
+package com.payu.sdk.messages.entities.builders;
 
-import com.payu.sdk.requests.entities.Product;
+import com.payu.sdk.messages.entities.Product;
 
 public class ProductBuilder {
     private Product product = new Product();

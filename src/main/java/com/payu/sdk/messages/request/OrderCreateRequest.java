@@ -1,11 +1,13 @@
-package com.payu.sdk.requests;
+package com.payu.sdk.messages.request;
 
-import com.payu.sdk.requests.entities.Buyer;
-import com.payu.sdk.requests.entities.Product;
+import com.payu.sdk.messages.entities.Buyer;
+import com.payu.sdk.messages.entities.Product;
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 import java.util.List;
 
-public class OrderCreateRequest {
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
+public class OrderCreateRequest implements OpenPayURequest {
     private long totalAmount;
     private String continueUrl;
     private String merchantPosId;

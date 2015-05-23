@@ -1,8 +1,8 @@
-package com.payu.sdk.requests.builders;
+package com.payu.sdk.messages.request.builders;
 
-import com.payu.sdk.requests.OrderCreateRequest;
-import com.payu.sdk.requests.entities.Buyer;
-import com.payu.sdk.requests.entities.Product;
+import com.payu.sdk.messages.request.OrderCreateRequest;
+import com.payu.sdk.messages.entities.Buyer;
+import com.payu.sdk.messages.entities.Product;
 
 import java.util.List;
 
