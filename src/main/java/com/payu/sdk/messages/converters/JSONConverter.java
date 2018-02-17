@@ -1,17 +1,14 @@
 package com.payu.sdk.messages.converters;
 
 import com.payu.sdk.messages.request.OpenPayURequest;
-import com.payu.sdk.messages.response.OpenPayUResponse;
-import com.payu.sdk.messages.response.OrderCancelResponse;
-import com.payu.sdk.messages.response.OrderCreateResponse;
-import com.payu.sdk.messages.response.RefundCreateResponse;
+import com.payu.sdk.messages.response.*;
 import org.codehaus.jackson.map.ObjectMapper;
 
 import java.io.IOException;
 
 public class JSONConverter {
 
-    public static String convertToJSON(OpenPayURequest request) throws IOException {
+    public static String serializeRequest(OpenPayURequest request) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
         return mapper.writeValueAsString(request);
     }
@@ -25,6 +22,8 @@ public class JSONConverter {
             case REFUND_CREATE_RESPONSE: response = mapper.readValue(rawResponse, RefundCreateResponse.class);
                                          break;
             case ORDER_CANCEL_RESPONSE:  response = mapper.readValue(rawResponse, OrderCancelResponse.class);
+                                         break;
+            case ORDER_RETRIEVE_RESPONSE:response = mapper.readValue(rawResponse, OrderRetrieveResponse.class);
                                          break;
             default: response = null;
                      break;

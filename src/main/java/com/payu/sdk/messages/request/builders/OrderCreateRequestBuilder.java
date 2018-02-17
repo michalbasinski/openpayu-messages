@@ -19,7 +19,6 @@ public class OrderCreateRequestBuilder {
         return this;
     }
 
-
     public OrderCreateRequestBuilder withCustomerIP(String customerIP) {
         orderCreateRequest.setCustomerIP(customerIP);
         return this;
