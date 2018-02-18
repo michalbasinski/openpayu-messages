@@ -19,7 +19,7 @@
     </build>
 
     <groupId>com.payu.sdk</groupId>
-    <artifactId>messages</artifactId>
+    <artifactId>openpayu-messages</artifactId>
     <version>1.0-SNAPSHOT</version>
     <dependencies>
         <dependency>
